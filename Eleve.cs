@@ -27,14 +27,16 @@ namespace HNI_TPmoyennes
             var notesMatiere = notes.Where(n => n.matiere == matiere);
             if (!notesMatiere.Any())
                 return 0.0f;
-            return notesMatiere.Average(n => n.note);
+            float moyenne = notesMatiere.Average(n => n.note);
+            return (float)Math.Truncate(moyenne * 100) / 100;
         }
 
         public float moyenneGeneral()
         {
             if (!notes.Any())
                 return 0.0f;
-            return notes.Average(n => n.note);
+            float moyenne = notes.Average(n => n.note);
+            return (float)Math.Truncate(moyenne * 100) / 100;
         }
     }
 }

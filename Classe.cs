@@ -36,7 +36,8 @@ namespace HNI_TPmoyennes
             if (!moyennes.Any())
                 return 0.0f;
                 
-            return moyennes.Average();
+            float moyenne = moyennes.Average();
+            return (float)Math.Truncate(moyenne * 100) / 100;
         }
 
         public float moyenneGeneral()
@@ -48,7 +49,8 @@ namespace HNI_TPmoyennes
             if (!moyennes.Any())
                 return 0.0f;
                 
-            return moyennes.Average();
+            float moyenne = moyennes.Average();
+            return (float)Math.Truncate(moyenne * 100) / 100;
         }
     }
 }
