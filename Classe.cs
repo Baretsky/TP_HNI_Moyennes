@@ -9,6 +9,7 @@ namespace HNI_TPmoyennes
         public string nomClasse { get; private set; }
         public List<Eleve> eleves { get; private set; }
         public List<string> matieres { get; private set; }
+        private const int MAX_ELEVES = 30;
 
         public Classe(string nomClasse)
         {
@@ -17,9 +18,15 @@ namespace HNI_TPmoyennes
             this.matieres = new List<string>();
         }
 
-        public void ajouterEleve(string prenom, string nom)
+        public bool ajouterEleve(string prenom, string nom)
         {
+            if (eleves.Count >= MAX_ELEVES)
+            {
+                Console.WriteLine($"Erreur: Impossible d'ajouter {prenom} {nom}. Maximum de {MAX_ELEVES} élèves par classe atteint.");
+                return false;
+            }
             eleves.Add(new Eleve(prenom, nom));
+            return true;
         }
 
         public void ajouterMatiere(string matiere)

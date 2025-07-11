@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.DS_Store # Mac OS X specific file
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
