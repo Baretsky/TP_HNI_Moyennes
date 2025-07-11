@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Boulot\\workspace\\HNI-TPmoyennes\\HNI-TPmoyennes.csproj": {}
+    "/Users/baretsky/Code/TP_HNI/HNI-TPmoyennes/HNI-TPmoyennes.csproj": {}
   },
   "projects": {
-    "D:\\Boulot\\workspace\\HNI-TPmoyennes\\HNI-TPmoyennes.csproj": {
+    "/Users/baretsky/Code/TP_HNI/HNI-TPmoyennes/HNI-TPmoyennes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Boulot\\workspace\\HNI-TPmoyennes\\HNI-TPmoyennes.csproj",
+        "projectUniqueName": "/Users/baretsky/Code/TP_HNI/HNI-TPmoyennes/HNI-TPmoyennes.csproj",
         "projectName": "HNI-TPmoyennes",
-        "projectPath": "D:\\Boulot\\workspace\\HNI-TPmoyennes\\HNI-TPmoyennes.csproj",
-        "packagesPath": "C:\\Users\\snico\\.nuget\\packages\\",
-        "outputPath": "D:\\Boulot\\workspace\\HNI-TPmoyennes\\obj\\",
+        "projectPath": "/Users/baretsky/Code/TP_HNI/HNI-TPmoyennes/HNI-TPmoyennes.csproj",
+        "packagesPath": "/Users/baretsky/.nuget/packages/",
+        "outputPath": "/Users/baretsky/Code/TP_HNI/HNI-TPmoyennes/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\snico\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/baretsky/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -34,11 +32,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
