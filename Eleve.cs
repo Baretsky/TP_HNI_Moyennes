@@ -9,6 +9,7 @@ namespace HNI_TPmoyennes
         public string prenom { get; private set; }
         public string nom { get; private set; }
         public List<Note> notes { get; private set; }
+        private const int MAX_NOTES = 200;
 
         public Eleve(string prenom, string nom)
         {
@@ -17,9 +18,15 @@ namespace HNI_TPmoyennes
             this.notes = new List<Note>();
         }
 
-        public void ajouterNote(Note note)
+        public bool ajouterNote(Note note)
         {
+            if (notes.Count >= MAX_NOTES)
+            {
+                Console.WriteLine($"Erreur: Impossible d'ajouter une note à {prenom} {nom}. Maximum de {MAX_NOTES} notes par élève atteint.");
+                return false;
+            }
             notes.Add(note);
+            return true;
         }
 
         public float moyenneMatiere(int matiere)
